@@ -1,4 +1,5 @@
 venv/
 *.swp
 **/cleaned_filtered_imdb_dataset.csv/
-*.csv
+*.aux
+*.log

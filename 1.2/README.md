@@ -1,6 +1,6 @@
 # Homework 1.2
 
-**Objective**: Installing MySQL & Creating Databases\
+**Objective**: Installing MySQL & Creating Databases
 
 ### Tasks:
 1. Install MySQl using the Developer Default setup and configure the server with a password
