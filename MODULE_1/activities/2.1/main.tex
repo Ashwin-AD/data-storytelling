@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry} % <-- ADD THIS LINE to set 1-inch margins
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    columns=fullflexible,   % <-- ADD THIS to help with alignment
+    xleftmargin=0pt,        % <-- SET to 0pt for left flush
+    xrightmargin=0pt        % <-- SET to 0pt
+}
+
+\lstset{style=mystyle}
+
+\title{Big Data in Business - The 3 Vs}
+
+\author{Ashwin Ajoy Dharmavaram - 1RV22AI011}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+Cybersecurity companies - Cloudflare
+
+\subsection*{Volume}
+Cybersecurity companies deal with large amounts of data in the form of network traffic, system logs, user activity, threat intelligence feeds. Estimates say that cloudflare processes 2 trillion HTTP requests per day. 
+\subsection*{Variety}
+Cybersecurity companies monitor a large variety of data: zip files, emails, network logs, executables, unauthorized access reports, etc. They process structured, semi structured and unstructured this way. 
+\subsection*{Velocity}
+Threats need to be responeded to in real time, within seconds. Otherwise, they risk loss of data, service, and trust. Cloudflare's performance bench marks mention that they respond to most requests within 5ms for regular requests and 5 min for DDoS attacks. 
+\end{document}

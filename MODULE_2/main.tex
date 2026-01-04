@@ -1,0 +1,96 @@
+\documentclass{article}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry} % <-- ADD THIS LINE to set 1-inch margins
+\usepackage{setspace}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    columns=fullflexible,   % <-- ADD THIS to help with alignment
+    xleftmargin=0pt,        % <-- SET to 0pt for left flush
+    xrightmargin=0pt        % <-- SET to 0pt
+}
+
+\lstset{style=mystyle}
+
+\title{Exploratory Research – Problem Formulation \& Data Collection Planning}
+
+\author{Ashwin Ajoy Dharmavaram - 1RV22AI011}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem Statement}
+
+\begin{center}
+    Improvement of the Bangalore Metro Scheduling.
+\end{center}
+
+The bangalore metro, is invaluable for me since I have to travel a long distance to the college. However, it takes a long time, has many stops, and sometimes, no one gets in. 
+The goal is to see that for a scheduling algorithm that optimises time spent in the metro for most people, how would it behave in the real world. 
+
+I won't be taking any particular scheduling algorithm, just analysis on if anything can be improved.  
+\\
+\hline
+
+\section{Research Design}
+Of the 2 main design strategies both might be needed:
+
+\subsubsection*{Primary Research}
+Due to the lack of publically available datasets on metro scheduling especially with regards to the number of people coming on and off at stations, number of people in a day, data on metro card swipes; it will be necessary to gather data directly from sources such as \textbf{Stored Databases}.
+
+\subsubsection*{Secondary Research}
+The metro schedules are actually public (on Android), when the trains come at each station can be recorded at each time of the day through scraping, and are valuable information.
+
+Along with that, the metro routes are public information, and for the sake of numerical simulation that might be needed through the project, the data regarding distances between stations and other physical information can be gotten.
+
+\section{Sampling and Data Collection}
+Since the topic is primarily an analysis/algorithm topic, the data that needs to be collected from people as an \textbf{interview} needs to be able to answer questions that cannot be inferred from cameras/databases. 
+    \begin{enumerate}
+        \item How many people miss trains every 5 minutes (the train frequency)?
+        \item How many people are on the platform for more than 10 minutes?
+        \item What's the average time the train stops at the station at each hour?
+        \item On sunday mornings, the train frequency is 15 minutes since no one has work or college. How many passengers get on each train? 
+            \begin{enumerate}
+                \item 1-5
+                \item 6-10
+                \item 10-20
+                \item 21+
+            \end{enumerate}
+        \item Would a scheduling algorithm where the train skips some stations be preferred by them?
+        \item What's the maximum number of people in the station that can be handled at a particular time? 
+        \item If the train doors are open a little less (3 seconds), would the rush be balanced by the speed of the train?
+        \item (For the points where train lines intersect) how is the shift from 1 line to the next, over the hours of the day? 
+    \end{enumerate}
+
+\section{Analysis}
+With data regarding the number of people who get on at particular stations, along with their time of day, it will be possible to discover patterns of rush hour at different stations. This makes algorithm design much easier, as parameters such as the amount of time a train spends at a particular station is directly dependant on the number of people at the station. 
+
+\section{Report}
+The presentation (apart from the algorithm itself) will be the justification on why different parts of the algorithm are the way they are, along with simulation on what might happen on different edge cases. 
+
+\end{document}

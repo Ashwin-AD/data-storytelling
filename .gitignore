@@ -3,3 +3,4 @@ venv/
 **/cleaned_filtered_imdb_dataset.csv/
 *.aux
 *.log
+*.csv
